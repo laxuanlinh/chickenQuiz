@@ -1,2 +1,2 @@
-include: [ "node_modules", "fonts" ]
-exclude: []
+include: [ "node_modules"];
+include: ["fonts"];
