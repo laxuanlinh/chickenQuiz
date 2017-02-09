@@ -1,0 +1,68 @@
+<div ng-controller="infoCtrl as info">
+    <div>
+        <div class="profile-header nav">
+            <img src="avatar.jpg" class="avatar img-responsive center-block">
+            <h1><strong>Minh Loan</strong></h1>
+            <p class="job-title">CSO</p>
+            <p id="slogan-1" class="slogan" style="display: none">Girl, if he only wants your breasts, legs and thighs. Send him to KFC</p>
+            <p id="slogan-2" class="slogan">Loan doesn't walk, she rolls</p>
+            <div class="">
+                <ul class="top-link list-inline">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav profile-nav" id="page-nav-wrapper">
+            <div class="col-md-3 nav-header">
+                <a href="">Minh Loan <span class="hide" id="hidden">ú</span></a>
+            </div>
+            <div class="col-md-9">
+                <ul class="list-inline nav-list">
+                    <li><a href="#about" du-smooth-scroll>About me</a></li>
+                    <li><a href="#edu" du-smooth-scroll>Education</a></li>
+                    <li><a href="#skill" du-smooth-scroll>Skills & Experience</a></li>
+                    <li><a href="#contact" du-smooth-scroll>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div ui-view></div>
+        <div class="footer">
+            <p>© 2016 Chicken Resume. All Rights Not Reserved | Design by La Xuan Linh</p>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            elementOffset = $('#page-nav-wrapper').offset().top;
+            $(window).on('scroll resize load', function () {
+                var scrollTop = $(window).scrollTop();
+                distance = (elementOffset - scrollTop);
+
+                $('#page-nav-wrapper').removeClass('fixed');
+
+                if (scrollTop >= elementOffset) {
+                    $('#page-nav-wrapper').addClass('navbar-fixed-top');
+                    $("#hidden").removeClass("hide");
+                } else {
+                    $('#page-nav-wrapper').removeClass('navbar-fixed-top');
+                    $("#hidden").addClass("hide");
+                }
+            });
+            check = true;
+            setInterval(function () {
+                if (check) {
+                    $("#slogan-1").fadeOut(function () {
+                        $("#slogan-2").fadeIn();
+                    });
+                } else {
+                    $("#slogan-2").fadeOut(function () {
+                        $("#slogan-1").fadeIn();
+                    });
+                }
+                check = !check;
+            }, 6000);
+        })
+    </script>
+</div>

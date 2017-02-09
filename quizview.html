@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Chicken quiz</h1>
+    </div>
+    <div class="row" ng-controller="quizCtrl as quiz">
+        <div class="well well-sm">
+            <h4>
+                {{quiz.activeQuiz+1 + ". " + quiz.quizData[quiz.activeQuiz].question}}
+            </h4>
+            <div class="row">
+                <div class="col-sm-6" ng-repeat="answer in quiz.quizData[quiz.activeQuiz].posibilities">
+                    <p class="answer well" ng-click="quiz.selectAnswer($index)">{{answer}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

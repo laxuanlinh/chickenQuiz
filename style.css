@@ -1,0 +1,210 @@
+.answer {
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid 1px #ccc; 
+}
+.answer:hover{
+    background: #ccc;
+}
+
+.profile-header{
+    background: url("banner.jpg");
+    text-align: center;
+    color: white;
+    height: 500px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 7px #65b0f2 solid;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.job-title{
+    font-size: 18px;
+    color: #65b0f2
+}
+
+.top-link li{
+    color: #fff;
+    font-size: 15px;
+    line-height: 31px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #fff;
+    margin: 10px;
+}
+
+.top-link li:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.profile-nav{
+    background: #43b2d3;
+    height: 50px;
+}
+
+.profile-nav a {
+    color: white;
+    line-height: 50px;
+}
+
+.profile-nav li{
+    margin-right: 100px;
+}
+.profile-nav li a:hover{
+    text-decoration: none !important;
+    color: #ccc
+}
+.nav-header {
+    font-size: 30px;
+}
+
+.nav-header a{
+    margin-left: 50px;
+    font-weight: bold;
+} 
+
+.fixed{
+    position: fixed;
+}
+
+.about {
+    margin-bottom: 100px;
+}
+
+.about-img{
+    height: 90%;
+    width: 90%;
+}
+
+.about-block {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-bottom: #43b2d3 dashed 2px;
+}
+
+.footer{
+    height: 200px;
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.footer-block{
+    text-align: center;
+    margin: 50px;
+    background: grey;
+
+}
+
+.experience{
+    text-align: center;
+    height: 400px;
+    background: url("experience.jpg");
+    color: white;
+}
+
+.experience p{
+    color: #43b2d3;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.experience i{
+    color: white;
+    font-size: 50px;
+}
+
+.experience-block{
+    margin: 100px 0px;
+}
+
+.education {
+    height: 600px;
+}
+
+.education h1{
+    text-align: center;
+}
+
+.edu-block{
+    width: 80%;
+    float: right;
+    border-bottom: dashed black 1px;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+.edu-year{
+    border-left: firebrick 5px solid;
+}
+
+.edu-block i{
+    color: #43b2d3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.edu{
+    background: url('banner.jpg'); 
+    height: 600px;
+    background-position: center; 
+    text-align: center;
+    color: white;
+    font-size: 72px;
+    padding-top: 200px;
+}
+
+.skill {
+    height: 600px;
+}
+
+.skill h1 {
+    text-align: center;
+}
+
+.skill-title{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('skill.jpg') no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center; 
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 70px;
+}
+
+.progress {
+    height: 10px !important;
+    border-radius: 0px;
+}
+
+.skill-title  p{
+    font-family: sans-serif;
+    color: #43b2d3;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.contact {
+    height: 600px;
+    padding: 50px;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
